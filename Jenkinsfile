@@ -6,7 +6,7 @@ pipeline{
          
         stage("Build"){
             steps {
-                echo "this is first application building"
+                echo 'this is first application building'
             }
          }
          stage("Test") {
