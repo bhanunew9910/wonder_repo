@@ -1,24 +1,20 @@
 pipeline{
-     
     agent any
-         
     stages {
-         
-        stage("Build"){
+        stage('Build') {
             steps {
-                echo 'this is first application building'
+                echo "this is first application building"
             }
-         }
-         stage("Test") {
-             steps {
-                 echo 'the application is testing'
-             }
-         }
-         stege("deploy") {
-             steps {
-                 echo 'the application is deploy'
-             }
-         }
-         
-     }
+        }
+        stage('Test') {
+            steps {
+                echo "the application is testing"
+            }
+        }
+        stege('deploy') {
+            steps {
+                echo "the application is deploy"
+            }
+        }
+    }
 }
